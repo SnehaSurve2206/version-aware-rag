@@ -1,0 +1,2735 @@
+question_id,question,method,rank,score,chunk_id,category,document,version_raw,text
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,1,0.5899091362953186,4663a91a-c87e-5ee6-acf2-df8ae4e645a7,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc5,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,2,0.5899091362953186,54687cb1-1e19-5d27-8ab5-128a272a7c6f,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc4,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,3,0.5899091362953186,7f5f80bc-18bb-5154-a11a-cde418e66b28,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc3,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,4,0.5899091362953186,49730dce-2f72-554b-b274-de7912f0526e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc2,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,5,0.5899091362953186,0d3e8389-4301-5d75-9c39-95fb8a34842e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc1,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,6,0.5899091362953186,425ae2c2-fe73-56a6-a5c0-308fc0cbdc41,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc0,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,7,0.5899091362953186,4014ca47-eda9-5141-805a-1104c26ab49b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc5,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,8,0.5899091362953186,0c14b378-b0e1-5d15-8351-bdc717164018,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc4,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,9,0.5899091362953186,8ae82efd-2329-5e40-930a-8200e0f92f90,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,Flat,10,0.5899091362953186,8f90996c-9366-5ca2-adb8-ad164f2946f7,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,100,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,1,0.7664718627929688,5f936c05-5df7-55ab-b39d-c634d6a56d95,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc5,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,2,0.7664718627929688,32d8b35b-fae8-5db9-a963-e636da2fe56c,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc4,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,3,0.7664718627929688,0f6148e9-23d1-5b2b-8a1c-3f8e6be6c9a0,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc3,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,4,0.7664718627929688,928ae2ce-cd64-5391-99ac-e498e494694b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc2,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,5,0.7664718627929688,f1ef1605-f076-5472-9c57-3d7de23ed8d6,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc1,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,6,0.7664718627929688,47caf7a5-cb80-58b1-9ff3-856e584e0eaa,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc0,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,7,0.7664718627929688,62309e97-72a1-5bd6-b577-46839db0ca9e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc5,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,8,0.7664718627929688,f1ae1d08-d11b-53f6-a848-cb72fb1265bf,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc4,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,9,0.7664718627929688,c47bab32-f0a3-56c1-9149-fdb9a004d1cd,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",Flat,10,0.7664718627929688,adeea5c5-d18d-5a2b-9792-b8a036c1e611,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,100,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,1,0.6724025011062622,63b8e0a4-3b75-513b-8ffe-accf3cf8f9fc,python,python_stdtypes,313,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Link to this heading"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [**CVE 2020-10735**](https://www.cve.org/CVERecord?id=CVE-2020-10735).
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,2,0.6724025011062622,d34d6949-bb9f-5113-bfb2-92eb0c34b2a9,python,python_stdtypes,312,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Link to this heading"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [**CVE 2020-10735**](https://www.cve.org/CVERecord?id=CVE-2020-10735).
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,3,0.6695167422294617,13ab9dd6-7dfa-54bb-b2dd-c50812037ef8,python,python_stdtypes,38,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,4,0.6695167422294617,b7add682-a5c7-5040-bcc2-6e8dda62a0bc,python,python_stdtypes,310,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,5,0.6624863743782043,8b2f2c14-fffc-5fda-9303-0aa2dd33f9e4,python,python_stdtypes,313,"The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+>>> len(hex(i_squared))
+7144
+>>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited.
+```
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,6,0.6624863743782043,91d82e2e-617d-54a2-b928-ace58585d08b,python,python_stdtypes,312,"The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+>>> len(hex(i_squared))
+7144
+>>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited.
+```
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,7,0.6356273889541626,28b0be26-e728-53f4-84fd-e1c72dcccfe3,python,python_stdtypes,39,"    method returns a list of all those references still alive. The list is in
+    definition order. Example:
+
+    ```None
+    >>> int.__subclasses__()
+    [<class 'bool'>]
+    ```
+
+## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,8,0.6284714937210083,e7c9c1e2-6bd2-579a-a396-4608dbb0f2a1,python,python_stdtypes,311,"a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+..."
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,9,0.6256462335586548,a0a246a9-486e-54eb-b0dd-8fd92f3ec148,python,python_stdtypes,39,"have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit.
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+..."
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",Flat,10,0.6198723316192627,f8ac493e-27f7-5dcb-806b-96f046296515,python,python_stdtypes,38,"Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit.
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+..."
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,1,0.5988501310348511,6079281e-7a2d-5424-9497-ee67460552b8,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc5,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,2,0.5988501310348511,d9c7e24c-d9cd-5876-a719-b575afe8a987,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc4,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,3,0.5988501310348511,a23f9df1-3bf8-5276-adbb-b9e14fdc4692,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc3,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,4,0.5988501310348511,e42f42f5-b782-534a-999a-97635f6069db,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc2,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,5,0.5988501310348511,e4866285-16c8-5077-a57b-e129605f40b5,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc1,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,6,0.5988501310348511,719243d8-7d00-5f02-b6d8-1c5a191dcaf8,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc0,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,7,0.5988501310348511,40fe7b2e-d52f-5e25-be96-6b5b544739b3,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc5,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,8,0.5988501310348511,e67fc5b2-7eb1-53cd-a1e6-890f20353d24,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc4,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,9,0.5988501310348511,5750fc4d-68af-57c9-80fe-d75d05d6c429,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",Flat,10,0.5988501310348511,44f3939b-93d9-5c1c-a820-8efe54b3c283,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,100,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,1,0.7399224042892456,11a9a05e-c469-5af9-a23a-678333a6a6fe,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc5,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,2,0.7399224042892456,cf39f775-8587-5bc6-ae91-66fa9bc20f29,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc4,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,3,0.7399224042892456,538e31c4-14e9-5e8e-b968-28225cb52d0d,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc3,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,4,0.7399224042892456,5ed7f10b-6d07-5737-bf86-61ce21686af8,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc2,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,5,0.7399224042892456,2fb0afc1-3729-5c94-a379-ea44b6977728,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc1,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,6,0.7399224042892456,5827fd68-c7a3-5840-8e93-eecb7ed0e775,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc0,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,7,0.7399224042892456,55e135d9-5e55-511a-b15b-4ba794d3f38b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc5,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,8,0.7399224042892456,e93bc160-9e56-5762-8c22-409ae9e44b98,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc4,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,9,0.7399224042892456,9c83ebf8-e599-54c1-9dca-d2698adfedd9,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",Flat,10,0.7399224042892456,3d2a0f50-55f5-50b5-9664-11c92aa6e5c2,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,100,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,1,0.5899090766906738,d63a7257-bf65-5240-994b-9869eb0cb2be,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,130rc2,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,2,0.5899090766906738,1db1fa01-4a0a-5216-823e-2ed6bf2b5bbb,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,130rc0,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,3,0.5899090766906738,c2a3c729-9744-5d99-bbf2-dff0ed29d19c,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc7,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,4,0.5899090766906738,f7958cbc-86a5-5971-9dab-ed4affe06a95,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc6,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,5,0.5899090766906738,7f5f80bc-18bb-5154-a11a-cde418e66b28,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc3,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,6,0.5899090766906738,49730dce-2f72-554b-b274-de7912f0526e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc2,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,7,0.5899090766906738,425ae2c2-fe73-56a6-a5c0-308fc0cbdc41,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc0,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,8,0.5899090766906738,4014ca47-eda9-5141-805a-1104c26ab49b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc5,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,9,0.5899090766906738,0c14b378-b0e1-5d15-8351-bdc717164018,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc4,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+16,In which TensorRT-LLM version did the KVCacheManager source link in the attention documentation update to reference commit 560ded5?,HNSW,10,0.5899090766906738,8f90996c-9366-5ca2-adb8-ad164f2946f7,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,100,"since it does multiply as `fp_value * (1.0 / kv_cache_scaling_factor)` in plugin.
+
+During generation, the values read from the cache are dequantized on-the-fly in
+the MHA/MQA kernel. Dequantization is defined as
+`quantized_value * kv_cache_scaling_factor`.
+
+### Sliding Window Attention, Cyclic (Rolling Buffer) KV Cache[#](#sliding-window-attention-cyclic-rolling-buffer-kv-cache ""Link to this heading"")
+
+TensorRT LLM has a feature called `Cyclic KV Cache`, which treats the kv cache
+as a circular buffer. This means that it only stores the kv cache for the last N
+tokens, where N is determined by the `attention_window_size` parameter in
+`TrtllmAttention.forward`. When the cache is full, new tokens’ kv cache will
+overwrite the “least recently used” caches.
+
+In the context phase, if the input length surpasses the `attention_window_size`,
+`Sliding Window Attention` will be activated. This serves the same function as
+the sliding window size.
+
+This feature helps to reduce the memory footprint of the kv cache when"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,1,0.7664717435836792,6c92173e-d8f4-5d52-8555-7a06a3334ea7,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,130rc1,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,2,0.7664717435836792,94b20fab-863c-5ab1-acba-6a37db1eae1a,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc8,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,3,0.7664717435836792,27579021-584e-57b1-afab-688a82f12679,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc6,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,4,0.7664717435836792,5f936c05-5df7-55ab-b39d-c634d6a56d95,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc5,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,5,0.7664717435836792,32d8b35b-fae8-5db9-a963-e636da2fe56c,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc4,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,6,0.7664717435836792,928ae2ce-cd64-5391-99ac-e498e494694b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc2,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,7,0.7664717435836792,f1ef1605-f076-5472-9c57-3d7de23ed8d6,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc1,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,8,0.7664717435836792,47caf7a5-cb80-58b1-9ff3-856e584e0eaa,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,120rc0,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,9,0.7664717435836792,62309e97-72a1-5bd6-b577-46839db0ca9e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110rc5,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+19,"What is the shape of the cache_indirection tensor used for beam-search in the attention operator, and what does each element represent?",HNSW,10,0.7664717435836792,c47bab32-f0a3-56c1-9149-fdb9a004d1cd,nvidia_tensorrt-llm,nvidia_tensorrt-llm_attention,110,"When determining the relative distance and adding positional information to tokens,
+StreamingLLM use the positions within the cache rather than those in the original text.
+
+`sink_token_length` is also used to enable this feature.
+
+### Beam-Search[#](#beam-search ""Link to this heading"")
+
+The attention operator supports beam-search. In the context phase, a single
+beam is computed per input sequence. In the generation phase, the MHA/MQA/GQA
+kernel uses an additional tensor to reconstruct the correct path for each beam.
+That tensor is called the `cache_indirection`. Its shape is `[batch_size, beam_width, max_seqlen]`.
+
+For a sequence `si`, a beam `bi` and a token `ti`, the element
+`cache_indirection[si][bi][ti]` is an integer between `0` and `beam_width-1`
+that indicates which path in the beam to read the K and V elements from in the
+KV cache. This tensor is populated in the sampling stage.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,1,0.6724026799201965,63b8e0a4-3b75-513b-8ffe-accf3cf8f9fc,python,python_stdtypes,313,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Link to this heading"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [**CVE 2020-10735**](https://www.cve.org/CVERecord?id=CVE-2020-10735).
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,2,0.6724026799201965,d34d6949-bb9f-5113-bfb2-92eb0c34b2a9,python,python_stdtypes,312,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Link to this heading"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [**CVE 2020-10735**](https://www.cve.org/CVERecord?id=CVE-2020-10735).
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,3,0.6695166826248169,13ab9dd6-7dfa-54bb-b2dd-c50812037ef8,python,python_stdtypes,38,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,4,0.6695166826248169,b7add682-a5c7-5040-bcc2-6e8dda62a0bc,python,python_stdtypes,310,"## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,5,0.6624865531921387,8b2f2c14-fffc-5fda-9303-0aa2dd33f9e4,python,python_stdtypes,313,"The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+>>> len(hex(i_squared))
+7144
+>>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited.
+```
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,6,0.6624865531921387,91d82e2e-617d-54a2-b928-ace58585d08b,python,python_stdtypes,312,"The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+>>> len(hex(i_squared))
+7144
+>>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited.
+```
+"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,7,0.635627269744873,28b0be26-e728-53f4-84fd-e1c72dcccfe3,python,python_stdtypes,39,"    method returns a list of all those references still alive. The list is in
+    definition order. Example:
+
+    ```None
+    >>> int.__subclasses__()
+    [<class 'bool'>]
+    ```
+
+## Integer string conversion length limitation[¶](#integer-string-conversion-length-limitation ""Permalink to this headline"")
+
+CPython has a global limit for converting between [`int`](functions.html#int ""int"") and [`str`](#str ""str"")
+to mitigate denial of service attacks. This limit *only* applies to decimal or
+other non-power-of-two number bases. Hexadecimal, octal, and binary conversions
+are unlimited. The limit can be configured.
+
+The [`int`](functions.html#int ""int"") type in CPython is an arbitrary length number stored in binary
+form (commonly known as a “bignum”). There exists no algorithm that can convert
+a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10"
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,8,0.6284716129302979,e7c9c1e2-6bd2-579a-a396-4608dbb0f2a1,python,python_stdtypes,311,"a string to a binary integer or a binary integer to a string in linear time,
+*unless* the base is a power of 2. Even the best known algorithms for base 10
+have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+..."
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,9,0.6256462335586548,a0a246a9-486e-54eb-b0dd-8fd92f3ec148,python,python_stdtypes,39,"have sub-quadratic complexity. Converting a large value such as `int('1' *
+500_000)` can take over a second on a fast CPU.
+
+Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit.
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+..."
+26,"Why does Python's integer-to-string conversion limit apply to some operations but not others, and what is the rationale behind which APIs are affected?",HNSW,10,0.6198720932006836,6fda398e-3847-5d88-b399-9810a63b218e,python,python_stdtypes,310,"Limiting conversion size offers a practical way to avoid [CVE-2020-10735](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735).
+
+The limit is applied to the number of digit characters in the input or output
+string when a non-linear conversion algorithm would be involved. Underscores
+and the sign are not counted towards the limit.
+
+When an operation would exceed the limit, a [`ValueError`](exceptions.html#ValueError ""ValueError"") is raised:
+
+```None
+>>> import sys
+>>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.
+>>> _ = int('2' * 5432)
+Traceback (most recent call last):
+...
+ValueError: Exceeds the limit (4300) for integer string conversion: value has 5432 digits; use sys.set_int_max_str_digits() to increase the limit.
+>>> i = int('2' * 4300)
+>>> len(str(i))
+4300
+>>> i_squared = i*i
+>>> len(str(i_squared))
+Traceback (most recent call last):
+..."
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,1,0.5988500118255615,4f475af0-6f71-59df-8b5f-e7bb4d3ac5ca,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,130rc1,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,2,0.5988500118255615,fc02b059-4a67-54df-b3c2-0e61f1e0577c,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc8,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,3,0.5988500118255615,c98c3a31-224c-5627-92a9-f210c9ca599b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc7,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,4,0.5988500118255615,d797539c-d675-5aaa-a51d-f261c8b00a8e,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc6,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,5,0.5988500118255615,d9c7e24c-d9cd-5876-a719-b575afe8a987,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc4,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,6,0.5988500118255615,a23f9df1-3bf8-5276-adbb-b9e14fdc4692,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc3,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,7,0.5988500118255615,e42f42f5-b782-534a-999a-97635f6069db,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc2,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,8,0.5988500118255615,e4866285-16c8-5077-a57b-e129605f40b5,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc1,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,9,0.5988500118255615,e67fc5b2-7eb1-53cd-a1e6-890f20353d24,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc4,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+30,"How does LoRA differ from traditional fine-tuning approaches, and what advantages does the multi-adapter capability provide when serving requests?",HNSW,10,0.5988500118255615,44f3939b-93d9-5c1c-a820-8efe54b3c283,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,100,"    model=""/path/to/base/model"",
+    lora_config=lora_config
+)
+
+# Create LoRA request
+lora_request = LoRARequest(""my-lora-task"", 0, ""/path/to/lora/adapter"")
+
+# Generate with LoRA
+prompts = [""Hello, how are you?""]
+sampling_params = SamplingParams(max_tokens=50)
+
+outputs = llm.generate(
+    prompts,
+    sampling_params,
+    lora_request=[lora_request]
+)
+```
+
+### Multi-LoRA Support[#](#multi-lora-support ""Link to this heading"")
+
+```None
+# Configure for multiple LoRA adapters
+lora_config = LoraConfig(
+    lora_target_modules=['attn_q', 'attn_k', 'attn_v'],
+    max_lora_rank=8,
+    max_loras=4,
+    max_cpu_loras=8
+)
+
+llm = LLM(model=""/path/to/base/model"", lora_config=lora_config)
+
+# Create multiple LoRA requests
+lora_req1 = LoRARequest(""task-1"", 0, ""/path/to/adapter1"")
+lora_req2 = LoRARequest(""task-2"", 1, ""/path/to/adapter2"")
+
+prompts = [
+    ""Translate to French: Hello world"",
+    ""Summarize: This is a long document...""
+]
+
+# Apply different LoRAs to different prompts
+outputs = llm.generate(
+    prompts,"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,1,0.7399225234985352,d8e54384-76c9-51ef-ae39-2a0b7530b303,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc6,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,2,0.7399225234985352,11a9a05e-c469-5af9-a23a-678333a6a6fe,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc5,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,3,0.7399225234985352,cf39f775-8587-5bc6-ae91-66fa9bc20f29,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc4,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,4,0.7399225234985352,538e31c4-14e9-5e8e-b968-28225cb52d0d,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc3,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,5,0.7399225234985352,5ed7f10b-6d07-5737-bf86-61ce21686af8,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc2,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,6,0.7399225234985352,2fb0afc1-3729-5c94-a379-ea44b6977728,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc1,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,7,0.7399225234985352,5827fd68-c7a3-5840-8e93-eecb7ed0e775,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,120rc0,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,8,0.7399225234985352,55e135d9-5e55-511a-b15b-4ba794d3f38b,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110rc5,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,9,0.7399225234985352,9c83ebf8-e599-54c1-9dca-d2698adfedd9,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,110,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"
+42,"In NVIDIA TensorRT-LLM version 1.2.0rc7, what parameters does the PeftCacheConfig class accept for LoRA cache management?",HNSW,10,0.7399225234985352,3d2a0f50-55f5-50b5-9664-11c92aa6e5c2,nvidia_tensorrt-llm,nvidia_tensorrt-llm_lora,100,"### Cache Management[#](#cache-management ""Link to this heading"")
+
+```None
+from tensorrt_llm.llmapi.llm_args import PeftCacheConfig
+
+# Fine-tune cache sizes
+peft_cache_config = PeftCacheConfig(
+    host_cache_size=1024*1024*1024,  # 1GB CPU cache
+    device_cache_percent=0.1          # 10% of free GPU memory
+)
+
+llm = LLM(
+    model=""/path/to/model"",
+    lora_config=lora_config,
+    peft_cache_config=peft_cache_config
+)
+```
+
+## TRTLLM serve with LoRA[#](#trtllm-serve-with-lora ""Link to this heading"")
+
+### YAML Configuration[#](#yaml-configuration ""Link to this heading"")
+
+Create an `extra_llm_api_options.yaml` file:
+
+```None
+lora_config:
+  lora_target_modules: ['attn_q', 'attn_k', 'attn_v']
+  max_lora_rank: 8
+```
+
+### Starting the Server[#](#starting-the-server ""Link to this heading"")
+
+```None
+python -m tensorrt_llm.commands.serve
+     /path/to/model \
+    --extra_llm_api_options extra_llm_api_options.yaml
+```
+"

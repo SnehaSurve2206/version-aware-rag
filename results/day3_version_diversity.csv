@@ -1,0 +1,101 @@
+question_id,question_type,method,distinct_versions,distinct_documents,mean_latency_ms
+1,Change Retrieval (e),Flat,10,1,15.117200000531742
+1,Change Retrieval (e),HNSW,10,1,1.5273999997589272
+2,Change Retrieval (e),Flat,9,1,2.430599999570404
+2,Change Retrieval (e),HNSW,9,1,0.5165999991731951
+3,Change Retrieval (e),Flat,6,1,2.5045000002137385
+3,Change Retrieval (e),HNSW,6,1,0.8343999998032814
+4,Change Retrieval (e),Flat,6,1,2.342300000236719
+4,Change Retrieval (e),HNSW,6,1,0.8572000006097369
+5,Change Retrieval (e),Flat,10,1,2.318699998795637
+5,Change Retrieval (e),HNSW,10,1,0.47930000073392864
+6,Change Retrieval (e),Flat,10,1,2.232200000435114
+6,Change Retrieval (e),HNSW,10,1,0.7612000008521136
+7,Change Retrieval (e),Flat,7,1,2.326300000277115
+7,Change Retrieval (e),HNSW,7,1,0.5671999988408061
+8,Change Retrieval (e),Flat,10,1,2.787999999782187
+8,Change Retrieval (e),HNSW,10,1,0.5087999998067971
+9,Change Retrieval (i),Flat,8,1,2.220200000010664
+9,Change Retrieval (i),HNSW,8,1,0.413499999922351
+10,Change Retrieval (i),Flat,7,1,2.2723000001860783
+10,Change Retrieval (i),HNSW,7,1,0.5796000004920643
+11,Change Retrieval (i),Flat,4,1,2.2176000002218643
+11,Change Retrieval (i),HNSW,4,1,0.4272999995009741
+12,Change Retrieval (i),Flat,7,2,3.103999999439111
+12,Change Retrieval (i),HNSW,7,2,0.5866999999852851
+13,Change Retrieval (i),Flat,5,1,2.5730999986990355
+13,Change Retrieval (i),HNSW,5,1,0.5965000000287546
+14,Change Retrieval (i),Flat,3,4,2.281000000948552
+14,Change Retrieval (i),HNSW,3,4,0.7576999996672384
+15,Change Retrieval (i),Flat,10,1,2.3951000002853107
+15,Change Retrieval (i),HNSW,10,1,0.5094000007375143
+16,Change Retrieval (i),Flat,10,1,2.3041000004013767
+16,Change Retrieval (i),HNSW,10,1,0.5936999987170566
+17,Content Retrieval,Flat,10,1,2.279899999848567
+17,Content Retrieval,HNSW,10,1,0.7081000003381632
+18,Content Retrieval,Flat,4,3,2.745399999184883
+18,Content Retrieval,HNSW,4,3,0.543199999810895
+19,Content Retrieval,Flat,10,1,2.286999999341788
+19,Content Retrieval,HNSW,10,1,0.4755000009026844
+20,Content Retrieval,Flat,7,1,2.307799999471172
+20,Content Retrieval,HNSW,7,1,0.5603999998129439
+21,Content Retrieval,Flat,4,1,2.209999998740386
+21,Content Retrieval,HNSW,4,1,0.48939999942376733
+22,Content Retrieval,Flat,6,1,2.2703999984514667
+22,Content Retrieval,HNSW,6,1,0.6862999998702435
+23,Content Retrieval,Flat,7,1,2.2171000000525964
+23,Content Retrieval,HNSW,7,1,0.48770000103104383
+24,Content Retrieval,Flat,6,1,2.2642000003543217
+24,Content Retrieval,HNSW,6,1,0.4798000009031965
+25,Content Retrieval Complex,Flat,4,3,2.863300000171876
+25,Content Retrieval Complex,HNSW,4,3,0.5942999996477738
+26,Content Retrieval Complex,Flat,6,1,2.271500001370441
+26,Content Retrieval Complex,HNSW,6,1,0.6334999998216517
+27,Content Retrieval Complex,Flat,7,3,2.334099999643513
+27,Content Retrieval Complex,HNSW,7,3,0.7163999998738291
+28,Content Retrieval Complex,Flat,4,1,2.2199000013642944
+28,Content Retrieval Complex,HNSW,4,1,0.523599999723956
+29,Content Retrieval Complex,Flat,7,1,2.29600000056962
+29,Content Retrieval Complex,HNSW,7,1,0.5277999989630189
+30,Content Retrieval Complex,Flat,10,1,2.4711999994906364
+30,Content Retrieval Complex,HNSW,10,1,1.075199999831966
+31,Content Retrieval Complex,Flat,7,2,2.2913000011612894
+31,Content Retrieval Complex,HNSW,7,2,0.48520000018470444
+32,Content Retrieval Complex,Flat,7,1,2.2820999984105583
+32,Content Retrieval Complex,HNSW,7,1,0.637700000879704
+33,Version Listing & Inquiry,Flat,9,1,2.3469999996450497
+33,Version Listing & Inquiry,HNSW,9,1,0.49729999955161464
+34,Version Listing & Inquiry,Flat,10,1,2.277699999467586
+34,Version Listing & Inquiry,HNSW,10,1,0.4403999992064199
+35,Version Listing & Inquiry,Flat,8,1,2.2313000008580275
+35,Version Listing & Inquiry,HNSW,8,1,0.4870000011578668
+36,Version Listing & Inquiry,Flat,8,1,2.289500000188127
+36,Version Listing & Inquiry,HNSW,8,1,0.5363999989640433
+37,Version Listing & Inquiry,Flat,9,1,2.742900000157533
+37,Version Listing & Inquiry,HNSW,9,1,0.48010000136855513
+38,Version Listing & Inquiry,Flat,8,1,2.6579000004858244
+38,Version Listing & Inquiry,HNSW,8,1,0.5079999991721706
+39,Version Listing & Inquiry,Flat,10,1,2.360600001338753
+39,Version Listing & Inquiry,HNSW,10,1,0.6766000005882233
+40,Version Listing & Inquiry,Flat,9,1,2.253099999506958
+40,Version Listing & Inquiry,HNSW,9,1,0.4767000009451293
+41,Version-Specific Content Retrieval,Flat,7,2,2.287499999511056
+41,Version-Specific Content Retrieval,HNSW,7,2,0.4158000010647811
+42,Version-Specific Content Retrieval,Flat,10,1,2.342900001167436
+42,Version-Specific Content Retrieval,HNSW,10,1,0.5023000012442935
+43,Version-Specific Content Retrieval,Flat,4,4,2.4716000007174443
+43,Version-Specific Content Retrieval,HNSW,4,4,0.5277999989630189
+44,Version-Specific Content Retrieval,Flat,9,1,2.394499999354593
+44,Version-Specific Content Retrieval,HNSW,9,1,0.5156999995961087
+45,Version-Specific Content Retrieval,Flat,6,2,2.2951999999349937
+45,Version-Specific Content Retrieval,HNSW,6,2,0.5025000009482028
+46,Version-Specific Content Retrieval,Flat,4,2,2.692199999728473
+46,Version-Specific Content Retrieval,HNSW,4,2,0.6071999996493105
+47,Version-Specific Content Retrieval,Flat,7,1,2.1866000006411923
+47,Version-Specific Content Retrieval,HNSW,7,1,0.4510999988269758
+48,Version-Specific Content Retrieval,Flat,4,3,2.333500000531785
+48,Version-Specific Content Retrieval,HNSW,4,3,0.6981000005907845
+49,Content Retrieval,Flat,7,2,2.2766999991290504
+49,Content Retrieval,HNSW,7,2,0.5559000001085224
+50,Change Retrieval (i),Flat,10,1,2.2779999999329448
+50,Change Retrieval (i),HNSW,10,1,0.4881999993813224

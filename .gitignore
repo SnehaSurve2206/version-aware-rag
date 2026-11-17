@@ -1,0 +1,38 @@
+
+Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+Secrets
+.env
+.env.*
+!.env.example
+
+Dataset files
+data/
+*.parquet
+*.feather
+
+Model files
+*.faiss
+*.index
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.bin
+
+Temporary files
+*.log
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+Generated benchmark indexes
+results/_benchmark_*.index
+
+Temporary and backup files
+*_backup.csv
+*_template.csv
