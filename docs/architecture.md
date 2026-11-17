@@ -1,92 +1,88 @@
-
-
-Version-Aware RAG — System Architecture
-
-
-
-1\. Architecture Overview
+VERSION-AWARE RAG — SYSTEM ARCHITECTURE
 
 
 
-The system investigates reliable retrieval from versioned technical documentation using exact and approximate vector search, with version-aware filtering and a proposed selective recovery mechanism.
+1\. ARCHITECTURE OVERVIEW
 
 
 
-2\. System Architecture Diagram
+The system investigates reliable retrieval from versioned technical documentation using exact and approximate vector search, version-aware filtering, and a proposed selective retrieval recovery mechanism.
 
 
 
-```mermaid
-
-flowchart TD
-
-&#x20;   A\["Versioned Documentation Corpus<br/>21,052 chunks"] --> B\["Data Preparation<br/>Chunking and Metadata"]
-
-&#x20;   B --> C\["Embedding Model<br/>all-MiniLM-L6-v2"]
-
-&#x20;   C --> D\["Vector Embeddings"]
+2\. SYSTEM ARCHITECTURE DIAGRAM
 
 
 
-&#x20;   D --> E\["FAISS Indexes"]
-
-&#x20;   E --> F\["Flat Index<br/>Exact Search"]
-
-&#x20;   E --> G\["HNSW Index<br/>Approximate Search"]
+The architecture consists of the following workflow:
 
 
 
-&#x20;   H\["User Query"] --> I\["Query Embedding"]
+Versioned Documentation Corpus
 
-&#x20;   I --> J{"Target Version Specified?"}
+→ Data Preparation
 
+→ Embedding Generation
 
-
-&#x20;   J -->|No| K\["Search Full Corpus"]
-
-&#x20;   J -->|Yes| L\["Version Detection<br/>and Normalization"]
-
-&#x20;   L --> M\["Filter Target-Version Chunks"]
+→ FAISS Vector Indexes
 
 
 
-&#x20;   K --> F
+User Query
 
-&#x20;   K --> G
+→ Query Embedding
 
-&#x20;   M --> N\["Filtered Exact Search"]
-
-
-
-&#x20;   F --> O\["Retrieved Top-K Evidence"]
-
-&#x20;   G --> O
-
-&#x20;   N --> O
+→ Version Detection
 
 
 
-&#x20;   O --> P\["Evaluation"]
+If no target version is specified:
 
-&#x20;   P --> Q\["Relevance and Version Correctness"]
+→ Full Corpus Retrieval
 
-&#x20;   P --> R\["Latency and Memory"]
-
-&#x20;   P --> S\["Recall@K and Ranking"]
+→ Flat / HNSW Search
 
 
 
-&#x20;   O -.-> T\["Proposed Selective Recovery"]
+If a target version is specified:
 
-&#x20;   T -.-> U\["Re-retrieval / Recovery"]
+→ Version Normalization
 
-&#x20;   U -.-> P
+→ Target-Version Filtering
 
-```
+→ Filtered Flat Search
 
 
 
-3\. Implemented Components
+Both retrieval paths produce:
+
+→ Retrieved Evidence
+
+→ Evaluation
+
+
+
+Evaluation includes:
+
+\- Relevance and Version Correctness
+
+\- Retrieval Latency
+
+\- Index Memory Usage
+
+
+
+Proposed Extension:
+
+→ Version-Coverage Checking
+
+→ Evidence-Sufficiency Checking
+
+→ Selective Retrieval Recovery
+
+
+
+3\. IMPLEMENTED COMPONENTS
 
 
 
@@ -98,13 +94,13 @@ flowchart TD
 
 4\. FAISS HNSW approximate retrieval.
 
-5\. Exact target-version filtering.
+5\. Initial exact target-version filtering.
 
-6\. Retrieval benchmarking and evidence evaluation.
+6\. Retrieval benchmarking and evidence analysis.
 
 
 
-4\. Proposed Components
+4\. PROPOSED COMPONENTS
 
 
 
@@ -118,25 +114,23 @@ flowchart TD
 
 
 
-These components are research objectives and are not yet fully implemented.
+These components are planned research extensions and are not yet fully implemented.
 
 
 
-5\. Evaluation Outputs
+5\. EVALUATION METRICS
 
 
 
-\- Standard Recall@K
+1\. Standard Recall@K.
 
-\- Correct-version Recall@K
+2\. Correct-Version Recall@K.
 
-\- Stale-version intrusion rate
+3\. Stale-Version Intrusion Rate.
 
-\- Retrieval latency
+4\. Retrieval Latency.
 
-\- Index memory usage
+5\. Index Memory Usage.
 
-\- Recovery success rate
-
-
+6\. Recovery Success Rate.
 
