@@ -1,10 +1,10 @@
 
 
-\# Version-Aware RAG — System Architecture
+Version-Aware RAG — System Architecture
 
 
 
-\## 1. Architecture Overview
+1\. Architecture Overview
 
 
 
@@ -12,7 +12,7 @@ The system investigates reliable retrieval from versioned technical documentatio
 
 
 
-\## 2. System Architecture Diagram
+2\. System Architecture Diagram
 
 
 
@@ -86,7 +86,7 @@ flowchart TD
 
 
 
-\## 3. Implemented Components
+3\. Implemented Components
 
 
 
@@ -104,7 +104,7 @@ flowchart TD
 
 
 
-\## 4. Proposed Components
+4\. Proposed Components
 
 
 
@@ -122,7 +122,7 @@ These components are research objectives and are not yet fully implemented.
 
 
 
-\## 5. Evaluation Outputs
+5\. Evaluation Outputs
 
 
 
